@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "pyelevator"
+version = "0.1.0"
+description = "Python Elevator Simulation"
+authors = ["Tammy Cravit <tammy@tammymakesthings.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+click = "*"
+ptipython = "*"
+bump2version = "*"
+wheel = "*"
+watchdog = "*"
+flake8 = "*"
+tox = "*"
+black = "*"
+isort = "*"
+pylint = "*"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "*"
+environ = "^1.0"
+pytest-mock = "^3.11.1"
+pytest-click = "^1.1.0"
+
+
+[tool.poetry.group.doc.dependencies]
+sphinx = "^7.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
